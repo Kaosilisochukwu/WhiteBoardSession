@@ -15,6 +15,16 @@ foreach (var item in result)
 Console.WriteLine($"Total => {result.Values.Sum()}");
 Console.WriteLine("==================================");
 
+var result1 = prog.GetChipCountString(123456789);
+Console.WriteLine("===================================");
+foreach (var item in result1)
+{
+    Console.WriteLine(item);
+}
+Console.WriteLine(string.Join(",", result1));
+//Console.WriteLine($"Total => {result1.Values.Sum()}");
+Console.WriteLine("==================================");
+
 var word1 = "Hello World";
 var word2 = "HelLo";
 var word3 = "Hello";
