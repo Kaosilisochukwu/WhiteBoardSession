@@ -31,3 +31,20 @@ var word3 = "Hello";
 Console.WriteLine("1 => " + prog.IsUnique(word1));
 Console.WriteLine("2 => " + prog.IsUnique(word2));
 Console.WriteLine("3 => " + prog.IsUnique(word3));
+
+Console.WriteLine("=====================================================================================");
+Console.WriteLine("=====================================================================================");
+Console.WriteLine(prog.capitalize_words(""));
+Console.WriteLine(prog.capitalize_words("a"));
+Console.WriteLine(prog.capitalize_words("aa"));
+Console.WriteLine(prog.capitalize_words("aaa"));
+Console.WriteLine(prog.capitalize_words("a a"));
+Console.WriteLine(prog.capitalize_words("aa a aaa"));
+Console.WriteLine(prog.capitalize_words(" 12D 8a A xy"));
+Console.WriteLine(prog.capitalize_words("ab.c"));
+Console.WriteLine(prog.capitalize_words("ab. cC"));
+Console.WriteLine(prog.capitalize_words("ab\ncd"));
+Console.WriteLine(prog.capitalize_words("ab\tcd"));
+Console.WriteLine("=====================================================================================");
+Console.WriteLine("=====================================================================================");
+
