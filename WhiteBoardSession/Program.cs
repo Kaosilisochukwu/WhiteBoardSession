@@ -46,5 +46,15 @@ Console.WriteLine(prog.capitalize_words("ab. cC"));
 Console.WriteLine(prog.capitalize_words("ab\ncd"));
 Console.WriteLine(prog.capitalize_words("ab\tcd"));
 Console.WriteLine("=====================================================================================");
+Console.WriteLine("=====================================================================================");Console.WriteLine(prog.capitalize_words(""));
+Console.WriteLine(prog.CyclicString("cabca"));
+//Console.WriteLine(prog.CyclicString("aba"));
+//Console.WriteLine(prog.CyclicString("abaca"));
+//Console.WriteLine(prog.CyclicString("abcdefghi"));
+//Console.WriteLine(prog.CyclicString("ccccccccccc"));
+//Console.WriteLine(prog.CyclicString("a"));
+//Console.WriteLine(prog.CyclicString("a"));
+//Console.WriteLine(prog.CyclicString("a"));
+Console.WriteLine("=====================================================================================");
 Console.WriteLine("=====================================================================================");
 

@@ -179,5 +179,91 @@ namespace WhiteBoardSession
             }
             return String.Join(" ", splittedWord);
         }
+
+        public int CyclicString(string s)
+        {
+            if(s.Length < 1)
+                return 0;
+
+            var shorSubstring = s[0].ToString();
+            var index = 1;
+            while (s.Replace(shorSubstring, "") != string.Empty)
+            {
+                shorSubstring += s[index];
+                var tempStr = s.Replace(shorSubstring, "");
+                if (shorSubstring.IndexOf(tempStr) == 0)
+                    return shorSubstring.Length;
+                index++;
+            }
+            return shorSubstring.Length;
+        }
+        /*
+         cccccccc
+        shor = c
+
+
+
+
+
+
+            shorSubstring = c
+            index = 1
+
+            first iteration
+            == "aba" is not equal to an empty string ==
+
+            s = cabca
+            shorSubstring = ca
+            tempStr = b
+            index = 2  
+
+            first iteration      
+            == "b" is not equal to an empty string ==
+            s = cabca
+            shorSubstring = cab
+            tempStr = ca
+         returns 3...
+
+            
+                       
+            abc
+            
+            
+            given s = "cabca".
+        -Pick up a substring of the string and assign it to a variable str.
+        -Replace every occurance of the substring "str" in s.
+        -check if the string is empty.
+
+
+
+
+
+
+
+         ccccccc X
+        cacacacaca X
+        cabcabcabc Y
+        string.Replace()
+         cabcabcabcabcabcabcab
+
+
+
+         */
+
+        //Task
+        //You're given a substring s of some cyclic string. What's the length of the smallest possible string
+        //that can be concatenated to itself many times to obtain this cyclic string?
+
+        //Example
+        //For s = "cabca", the output should be 3
+
+        //"cabca" is a substring of a cycle string "abcabcabcabc..."
+        //that can be obtained by concatenating "abc" to itself. Thus, the answer is 3.
+
+        //Input/Output
+        //[input] string s
+        //Constraints: 3 ≤ s.length ≤ 15.
+
+        //[output] an integer
     }
 }
